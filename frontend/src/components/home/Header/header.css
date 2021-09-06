@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.content-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-sidebar>*:nth-child(1) {
+    flex: 1 1 85%;
+}
+
+.content-sidebar>*:nth-child(2) {
+    flex: 1 1 15%;
+}
+
+.title-home-header {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    padding-top: 19px;
+}
+
+.title-home-header span {
+    font-weight: 700;
+}
+
+.nav-bar {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    text-align: right;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding-right: 30px;
+    border-right: 1px solid #E7F0F2;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-family: "Ubuntu";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #00000066;
+
+}

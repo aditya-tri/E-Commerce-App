@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+.mid-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 1em;
+}
+
+.mid-content>*:nth-child(1) {
+    flex: 1 1 15%;
+}
+
+.mid-content>*:nth-child(2) {
+    flex: 1 1 80%;
+}
+
+button.btn-home {
+    width: 98px;
+    height: 32px;
+    text-transform: capitalize;
+    font-family: "Ubuntu";
+    background-color: black;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sub-title-home {
+    text-align: right;
+    font-size: 36px;
+    font-family: "Ubuntu";
+    font-weight: 300;
+}
+
+.sub-title-home span {
+    font-weight: 700;
+}
+
+.text-home {
+    margin-top: 60px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.55);
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    width: 100%;
+    border: 100%;
+    font-family: "Ubuntu";
+    font-weight: 500;
+}
+
+.btn-home button {
+    font-family: "Ubuntu";
+    font-weight: 700;
+}

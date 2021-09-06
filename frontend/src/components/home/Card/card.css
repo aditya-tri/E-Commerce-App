@@ -1,0 +1,34 @@
+.card-home {
+    display: flex;
+    margin-top: 30px;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.gallery,
+.activities,
+.keynote {
+    Width: 215px;
+    Height: 114px;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+    text-align: right;
+    line-height: 11px;
+}
+
+.card-text {
+    margin-top: 63px;
+    margin-right: 16px;
+}
+
+.text-1 {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 11px;
+}
+
+.text-2 {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 9px;
+}
