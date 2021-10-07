@@ -12,6 +12,7 @@ import ShippingAdressScreen from './screens/ShippingAdressScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
+import OrderHistoryScreen from './screens/OrderHistoryScreen';
 
 function App() {
 
@@ -52,15 +53,18 @@ function App() {
                 </Link>
                 <ul className="dropdown-content">
                   <li>
+                    <Link to="/orderhistory">Order History</Link>
+                  </li>
+                  <li>
                     <Link to="#signout" onClick={signoutHandler}>
                       Signout
                     </Link>
-                  </li>  
+                  </li>
                 </ul>
               </div>
             ) : (
-              <Link to="/signin">Sign In</Link>
-            )}  
+              <Link to="/signin">Sign in</Link>
+            )}
           </div>
         </header>
         <main>
@@ -73,6 +77,7 @@ function App() {
           <Route path="/placeorder" component={PlaceOrderScreen}></Route>
           <Route path="/productlist" component={ProductList}></Route>
           <Route path="/order/:id" component={OrderScreen}></Route>
+          <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
           <Route path="/" component= {HomeScreen} exact></Route>
         </main>
         <footer className="row center">© EightyFour</footer>
