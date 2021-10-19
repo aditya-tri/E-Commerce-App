@@ -20,14 +20,17 @@ export default function CartScreen(props) {
   const removeFromCartHandler = (id) => {
     dispatch(removeFromCart(id));
   };
-  
+
   const checkOutHandler = () => {
     props.history.push('/signin?redirect=shipping')
   }
   return (
     <div className="row top">
       <div className="col-2">
-        <h1>Shopping Cart</h1>
+        <div className="row">
+          <h1>Shopping Cart</h1>
+          <Link to='/productlist'><h1>Product List</h1></Link>
+        </div>
         {cartItems.length === 0 ? (
             <MessageBox>
               Cart is empty. <Link to="/productList"> Go Shopping</Link>
@@ -40,20 +43,20 @@ export default function CartScreen(props) {
                   <li key={item.product}>
                     <div className="row">
                       <div>
-                        <img 
-                          src={item.image} 
-                          alt={item.name} 
+                        <img
+                          src={item.image}
+                          alt={item.name}
                           className="small"/>
                       </div>
                       <div className="min-30">
                         <Link to={`/product/${item.product}`}>{item.name}</Link>
                       </div>
                       <div>
-                        <select 
-                          value={item.qty} 
-                          onChange={e=> 
+                        <select
+                          value={item.qty}
+                          onChange={e=>
                             dispatch(
-                              addToCart(item.product, Number(e.target.value)), 
+                              addToCart(item.product, Number(e.target.value)),
                             )
                           }
                         >
@@ -68,8 +71,8 @@ export default function CartScreen(props) {
                       </div>
                       <div>Rp{item.price}</div>
                       <div>
-                        <button 
-                          type="button" 
+                        <button
+                          type="button"
                           onClick={()=>removeFromCartHandler(item.product)}
                           >Delete</button>
                       </div>
@@ -91,10 +94,10 @@ export default function CartScreen(props) {
               </h2>
             </li>
             <li>
-              <button 
-                type="button" 
-                onClick={checkOutHandler} 
-                className="primary block" 
+              <button
+                type="button"
+                onClick={checkOutHandler}
+                className="primary block"
                 disabled={cartItems.length === 0}>
                   Checkout
                 </button>
