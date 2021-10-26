@@ -15,7 +15,8 @@ import OrderScreen from './screens/OrderScreen';
 import OrderHistoryScreen from './screens/OrderHistoryScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import PrivateRoute from './components/PrivateRoute';
-
+// import AdminRoute from './components/AdminRoute';
+// import AdminProductListScreen from './screens/AdminProductListScreen';
 function App() {
 
   const cart = useSelector(state=> state.cart);
@@ -78,7 +79,7 @@ function App() {
                     <Link to="/dashboard">Dashboard</Link>
                   </li>
                   <li>
-                    <Link to="/productlist">Products</Link>
+                    <Link to="/adminproductlist">Products</Link>
                   </li>
                   <li>
                     <Link to="/orderlist">Orders</Link>
@@ -99,10 +100,11 @@ function App() {
           <Route path="/shipping" component={ShippingAdressScreen}></Route>
           <Route path="/payment" component={PaymentMethodScreen}></Route>
           <Route path="/placeorder" component={PlaceOrderScreen}></Route>
-          <Route path="/productlist" component={ProductList}></Route>
           <Route path="/order/:id" component={OrderScreen}></Route>
           <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
           <PrivateRoute path="/profile" component={ProfileScreen}></PrivateRoute>
+          {/* <AdminRoute path="/adminproductlist">{AdminProductListScreen}</AdminRoute> */}
+          <Route path="/productlist" component={ProductList}></Route>
           <Route path="/" component= {HomeScreen} exact></Route>
         </main>
         <footer className="row center">© EightyFour</footer>
