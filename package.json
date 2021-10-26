@@ -5,6 +5,7 @@
   "description": "Build E-Commerce using React.js for frontend and node.js for backend",
   "main": "index.js",
   "scripts": {
+    "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +21,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "engines": {"node":"14.17.0", "npm": "6.14.13"}
 }
