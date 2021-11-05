@@ -8,7 +8,7 @@ https://eightyfour.herokuapp.com
 
 ## Screenshots
 
-<p float="left">
+<p float="left" align="center">
   <img src="https://github.com/aditya-tri/E-Commerce-App/blob/master/screenshots/screenshot-1.png" width="500" height="300" />
   <img src="https://github.com/aditya-tri/E-Commerce-App/blob/master/screenshots/screenshot-2.png" width="500" height="300" />
   <img src="https://github.com/aditya-tri/E-Commerce-App/blob/master/screenshots/screenshot-3.png" width="500" height="300" />
