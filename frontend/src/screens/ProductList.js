@@ -4,13 +4,13 @@ import LoadingBox from '../components/LoadingBox';
 import {useDispatch, useSelector} from 'react-redux'
 import { listProducts } from '../actions/productActions';
 
-export default function ProductScreen() {
+export default function ProductListScreen() {
   const dispatch = useDispatch();
   const productList = useSelector((state) => state.productList);
   const { loading, products } = productList;
   useEffect(() => {
     dispatch(listProducts())
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [dispatch])
   return (
     <div>
       {loading ? (
