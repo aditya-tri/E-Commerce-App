@@ -15,6 +15,14 @@ https://eightyfour.herokuapp.com
   <img src="https://github.com/aditya-tri/E-Commerce-App/blob/master/screenshots/screenshot-7.png" width="500" height="300" />
 </p>
 
+## Tech Stack
+
+**Client:** React, Redux
+
+**Server:** Node, Express
+
+**Database:** MongoDB
+
 ## Run Locally
 
 Clone the project
