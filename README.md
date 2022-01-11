@@ -1,6 +1,6 @@
 # E-Commerce App
 
-Final Project Cilsy building E-commerce App using Reactjs
+Building E-commerce App using Reactjs
 
 ## Demo
 
